@@ -8,7 +8,7 @@ pipeline{
 
             steps {
                 	sh '''                	
-                    gradle clean build
+                    clean build
 					'''
             }
         }
