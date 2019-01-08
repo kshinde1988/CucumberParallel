@@ -1,19 +1,10 @@
-pipeline{
-
+pipeline {
     agent any
-
     stages {
-
-        stage ('Compile Stage') {
-
+        stage('CleanWorkspace') {
             steps {
-                	sh '''                	
-                  gradle clean build
-					'''
+                cleanWs()
             }
         }
-
-
     }
-
 }
