@@ -11,7 +11,7 @@ pipeline {
                 sh 'make'
             }
          }
-        stage('BuildWorkspace') {
+        stage('Test') {
             steps {
                 sh 'make runInSequence'
             }    
