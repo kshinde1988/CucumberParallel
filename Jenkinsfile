@@ -3,16 +3,8 @@ pipeline {
     stages {
         stage('CleanWorkspace') {
             steps {
-                cleanWs()
+                cleanBuild(boolean cleanBuild = true)
             }
         }
-        stage('BuildWorkspace') {
-            steps {
-              
-               build()
-               
-            }
-         }
-       
     }
 }
