@@ -1,3 +1,4 @@
+@ABC
 Feature: This just contains four scenarios that sleeps for one second each
 
   This feature file just sleeps for a 4 seconds (one second each scenario)
@@ -7,19 +8,19 @@ Feature: This just contains four scenarios that sleeps for one second each
   Scenario: Example 1 that sleep 1 seconds - three
     Given I have the this useless scenario
     When I sleep for 1 seconds
-    Then It should finnish
+    Then It should finished
 
   Scenario: Example 2 that sleep 1 seconds - three
     Given I have the this useless scenario
     When I sleep for 1 seconds
-    Then It should finnish
+    Then It should finished
 
   Scenario: Example 2 that sleep 1 seconds - three
     Given I have the this useless scenario
     When I sleep for 1 seconds
-    Then It should finnish
+    Then It should finished
 
   Scenario: Example 2 that sleep 1 seconds - three
     Given I have the this useless scenario
     When I sleep for 1 seconds
-    Then It should finnish
+    Then It should finished
