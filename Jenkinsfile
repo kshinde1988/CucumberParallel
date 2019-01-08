@@ -8,7 +8,7 @@ pipeline {
         }
         stage('BuildWorkspace') {
             steps {
-                build()
+                gradle('-e build')
             }
         }
     }
