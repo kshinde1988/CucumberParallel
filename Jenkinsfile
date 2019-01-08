@@ -6,5 +6,10 @@ pipeline {
                 cleanWs()
             }
         }
+        stage('BuildWorkspace') {
+            steps {
+                buildWs()
+            }
+        }
     }
 }
