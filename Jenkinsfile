@@ -7,20 +7,12 @@ pipeline{
         stage ('Compile Stage') {
 
             steps {
-                
-                    bat 'gradlew.bat clean build'
-
+                	bash '''                	
+                    gradle clean build
+					'''
             }
         }
-    stage ('Test Stage') {
 
-            steps {
-               
-                    bat 'gradlew.bat runInParallel'
-
-
-            }
-        }
 
     }
 
