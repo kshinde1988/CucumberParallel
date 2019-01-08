@@ -8,13 +8,11 @@ pipeline {
         }
         stage('BuildWorkspace') {
             steps {
-                sh 'make'
+              
+               build()
+               
             }
          }
-        stage('Test') {
-            steps {
-                sh 'make runInSequence'
-            }    
-        }
+       
     }
 }
