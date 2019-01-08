@@ -8,8 +8,12 @@ pipeline {
         }
         stage('BuildWorkspace') {
             steps {
-                gradle('-e build')
+                sh 'make'
             }
+        stage('BuildWorkspace') {
+            steps {
+                sh 'make runInSequence'
+            }    
         }
     }
 }
