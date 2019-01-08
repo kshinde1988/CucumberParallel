@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'make'
             }
+         }
         stage('BuildWorkspace') {
             steps {
                 sh 'make runInSequence'
