@@ -8,7 +8,7 @@ pipeline{
 
             steps {
                 
-                    bat 'gradle clean build'
+                    bat 'gradlew.bat clean build'
 
             }
         }
@@ -16,7 +16,7 @@ pipeline{
 
             steps {
                
-                    bat 'gradle runInParallel'
+                    bat 'gradlew.bat runInParallel'
 
 
             }
