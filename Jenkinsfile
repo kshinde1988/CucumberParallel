@@ -8,8 +8,7 @@ pipeline {
         }
         stage('BuildWorkspace') {
             steps {
-              
-               
+              buildWs()
                }
             }
          }

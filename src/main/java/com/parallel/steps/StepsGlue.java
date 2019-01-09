@@ -6,7 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class Steps {
+public class StepsGlue {
 	
 	private User user = new User();
 	String pos;
